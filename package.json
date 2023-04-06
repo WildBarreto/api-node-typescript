@@ -16,8 +16,8 @@
     "style:fix": "prettier --write 'src/**/*.ts' 'test/**/*.ts'"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/waldemarnt/node-typescript-api.git"
+    "type": "git"
+   
   },
   "keywords": [
     "node",
@@ -28,18 +28,22 @@
   "author": "Waldemar Neto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waldemarnt/node-typescript-api/issues"
+    
   },
-  "homepage": "https://github.com/waldemarnt/node-typescript-api#readme",
+ 
   "dependencies": {
+    "-": "^0.0.1",
     "@overnightjs/core": "^1.7.6",
     "@types/express": "^4.17.13",
+    "@types/nock": "^11.1.0",
+    "D": "^1.0.0",
     "axios": "^0.24.0",
     "body-parser": "^1.19.1",
     "config": "^3.3.6",
     "express": "^4.17.2",
     "module-alias": "^2.2.2",
-    "mongoose": "^6.1.4"
+    "mongoose": "^6.1.4",
+    "nock": "^13.3.0"
   },
   "devDependencies": {
     "@types/config": "^0.0.40",
