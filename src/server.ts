@@ -5,6 +5,9 @@ import bodyParser from 'body-parser';
 import { ForecastController } from './controllers/forecast';
 import * as database from '@src/database';
 import { BeachesController } from './controllers/beaches';
+import mongoose from 'mongoose';
+
+
 
 export class SetupServer extends Server {
   /*
@@ -46,5 +49,11 @@ export class SetupServer extends Server {
 
   public async close(): Promise<void> {
     await database.close();
+  } 
+ 
+  public start(): void {
+    this.app.listen(this.port, () => {
+      console.info('Server listening on port: ' + this.port);
+    });
   }
 }
